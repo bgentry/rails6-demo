@@ -1,4 +1,15 @@
 GIT
+  remote: https://github.com/bgentry/sequel-rails.git
+  revision: aa4df50448650724361746c650d1c326b25bd1fe
+  branch: parallel-tests
+  specs:
+    sequel-rails (1.0.1)
+      actionpack (>= 4.0.0)
+      activemodel (>= 4.0.0)
+      railties (>= 4.0.0)
+      sequel (>= 3.28, < 6.0)
+
+GIT
   remote: https://github.com/rails/rails.git
   revision: 611e1102d3bd46c4765bec7d57ca8d343c419e33
   specs:
@@ -99,6 +110,7 @@ GEM
     nio4r (2.3.0)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
+    pg (1.0.0)
     puma (3.11.4)
     rack (2.0.4)
     rack-test (1.0.0)
@@ -113,6 +125,7 @@ GEM
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     ruby_dep (1.5.0)
+    sequel (5.7.1)
     spring (2.0.2)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -140,8 +153,10 @@ DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
   listen (>= 3.0.5, < 3.2)
+  pg
   puma (~> 3.11)
   rails!
+  sequel-rails!
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
