@@ -1,0 +1,13 @@
+default: &default
+  host: localhost
+  adapter: postgresql
+  encoding: utf8
+  max_connections: 10
+
+development:
+  <<: *default
+  database: rails6_demo_development
+
+test:
+  <<: *default
+  database: rails6_demo_test
